@@ -35,6 +35,12 @@ jobs:
         
     - name: Install dependencies
       run: pip install -r ./lambda/requirements.txt
-
+      
+    - name: AWS SAM build
+      run: sam build
+    
+    - name: AWS SAM deploy
+      run: sam deploy
+    
 
     
