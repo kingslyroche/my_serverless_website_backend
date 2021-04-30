@@ -34,7 +34,7 @@ jobs:
         python-version: 3.8
         
     - name: Install dependencies
-      run: pip install -r ./lambda/requirements.txt
+      run: pip install boto3 aws-sam-cli
       
     - name: AWS SAM build
       run: sam build
